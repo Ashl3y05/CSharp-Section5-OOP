@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,6 +73,15 @@ namespace Section_5___OOP
             Brand = brand;
             ModelNumber = modelNumber;
             Console.WriteLine("KitchenTools has been created!");
+        }
+
+        // Inner Class
+        public class Knife {
+            public string KnifeName { get; set; }
+            public void Cut() {
+                
+            Console.WriteLine($"The knife '{KnifeName}' is cutting");
+            }
         }
     }
 }

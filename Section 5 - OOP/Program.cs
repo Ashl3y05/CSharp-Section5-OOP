@@ -24,6 +24,9 @@
 
             Cooks adam = new Cooks(name: "Adam", position: "Dishwasher", experiences:[ "NA" ]);
 
+            KitchenTools.Knife knife1 = new KitchenTools.Knife();
+            knife1.KnifeName = "Chef's Knife";
+            knife1.Cut();
             Console.ReadKey();
         }
     }

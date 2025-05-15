@@ -22,6 +22,8 @@
 
             Console.WriteLine($"Name of tool: {knife.Name}\nBrand: {knife.Brand}\nModel: {knife.ModelNumber}");
 
+            Cooks adam = new Cooks(name: "Adam", position: "Dishwasher", experiences:[ "NA" ]);
+
             Console.ReadKey();
         }
     }

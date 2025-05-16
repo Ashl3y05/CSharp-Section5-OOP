@@ -23,7 +23,9 @@
             Console.WriteLine($"Name of tool: {knife.Name}\nBrand: {knife.Brand}\nModel: {knife.ModelNumber}");
 
             Cooks adam = new Cooks(name: "Adam", position: "Dishwasher", experiences:[ "NA" ]);
-
+            Cooks eve = new Cooks(name: "Eve", position: "Cashier", experiences: ["NA"]);
+            adam.ShowCookDetails();
+            eve.ShowCookDetails();
             KitchenTools.Knife knife1 = new KitchenTools.Knife();
             knife1.KnifeName = "Chef's Knife";
             knife1.Cut();

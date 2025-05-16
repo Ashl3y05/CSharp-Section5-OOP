@@ -11,6 +11,9 @@ namespace Section_5___OOP
         private string _name;
         private string _position;
 
+        private static int nextID = 1;
+
+        private readonly int _id;
         public string ChefName
         {
             get { return _name; }
@@ -51,10 +54,15 @@ namespace Section_5___OOP
 
         public Cooks(string name, string position, string[] experiences)
         {
+            _id = nextID++;
             ChefName = name;
             ChefPosition = position;
             ChefExperiences = experiences;
             Console.WriteLine($"A Cook named {ChefName} with a position {ChefPosition} has been created");
+        }
+
+        public void ShowCookDetails() {
+            Console.WriteLine($"Cook name: {ChefName}\nCook ID: {_id}");
         }
     }
 }
